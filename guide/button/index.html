@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebSite">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Buttons - Sprintwell Digital Design Guidelines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" as="font" href="/sprintwell-dev/fonts/cera-pro-bold.437f12.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="/sprintwell-dev/fonts/cera-pro-regular.9035d7.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="/sprintwell-dev/fonts/cera-stencil-pro-regular.5fb7b1.woff2" type="font/woff2" crossorigin>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="description" content="Button styles used on the Sprintwell website">
+  <meta property="og:title" content="Buttons - Sprintwell Digital Design Guidelines">
+  <meta property="og:description" content="Button styles used on the Sprintwell website">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sprintwell">
+  <meta property="og:image" content="/sprintwell-dev/img/og/og-family.jpg">
+  <meta itemprop="image" content="/sprintwell-dev/img/og/og-family.jpg">
+  <link rel="image_src" href="/sprintwell-dev/img/og/og-family.jpg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/sprintwell-dev/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/sprintwell-dev/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/sprintwell-dev/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/sprintwell-dev/site.webmanifest">
+  <link rel="mask-icon" href="/sprintwell-dev/img/favicon/safari-pinned-tab.svg" color="#2e38ef">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#f3dc3d">
+<link href="../../css/app.css" rel="stylesheet"></head>
+
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+
+  <nav class="bt-white brd-bottom pad-vert-tiny main-nav gutter-large" aria-label="Main">
+    <p class="container flush">
+      <a href="/sprintwell-dev/guide/" class="btn btn-nav">Home</a>
+      <a href="/sprintwell-dev/guide/typeface/" class="btn btn-nav">Typefaces</a>
+      <a href="/sprintwell-dev/guide/typography/" class="btn btn-nav">Typography</a>
+      <a href="/sprintwell-dev/guide/heading/" class="btn btn-nav">Headings</a>
+      <a href="/sprintwell-dev/guide/colour/" class="btn btn-nav">Colour</a>
+      <a href="/sprintwell-dev/guide/button/" class="btn btn-nav">Buttons</a>
+      <a href="/sprintwell-dev/guide/form/" class="btn btn-nav">Form</a>
+      <a href="/sprintwell-dev/guide/panel/" class="btn btn-nav">Panels and call-to-action</a>
+      <a href="/sprintwell-dev/guide/icon/" class="btn btn-nav">Icons</a>
+    </p>
+  </nav>
+
+  <main id="main">
+    <h1 class="container">Buttons</h1>
+    <p class="container">Primary, secondary and tertiary buttons naturally match the height of <a href="/sprintwell-dev/guide/form/">standard form elements</a>.</p>
+
+    <section aria-label="Primary" class="container gutter-xlarge">
+      <h2>Primary</h2>
+      <p>Using the <code>btn-primary</code> (along with <code>btn</code>) class produces this style of button. The label text can be hidden using a <code>span</code> with a class of <code>sr-only</code> and a class of <code>btn-compact</code> added as a modifying class on the parent button.</p>
+      <h3>Default</h3>
+      <p>
+        <a href="#" class="btn btn-primary">Link</a>
+        <span class="btn btn-primary">Span</span>
+        <button type="button" class="btn btn-primary">Button</button>
+        <input type="button" class="btn btn-primary" value="Input">
+        <label class="btn btn-primary">Label</label>
+        <a href="#" class="btn btn-primary">Long text which may cause the button to wrap</a>
+        <a href="#" class="btn btn-primary btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Link</span></a>
+        <span class="btn btn-primary btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Span</span></span>
+        <button type="button" class="btn btn-primary btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Button</span></button>
+        <a href="#" class="btn btn-primary btn-wide">Wide</a>
+      </p>
+      <h3>Small</h3>
+      <p>
+        <a href="#" class="btn btn-primary btn-small">Link</a>
+        <span class="btn btn-primary btn-small">Span</span>
+        <button type="button" class="btn btn-primary btn-small">Button</button>
+        <input type="button" class="btn btn-primary btn-small" value="Input">
+        <label class="btn btn-primary btn-small">Label</label>
+        <a href="#" class="btn btn-primary btn-small">Long text which may cause the button to wrap</a>
+        <a href="#" class="btn btn-primary btn-small btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Link</span></a>
+        <span class="btn btn-primary btn-small btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Span</span></span>
+        <button type="button" class="btn btn-primary btn-small btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Button</span></button>
+        <a href="#" class="btn btn-primary btn-small btn-wide">Wide</a>
+      </p>
+    </section>
+
+    <section class="bg-black pad-vert-large gutter-xlarge" aria-label="Primary, inverted">
+      <div class="container">
+        <h2>Primary, inverted</h2>
+        <p>Using the <code>btn-primary</code> and <code>btn-invert</code> (along with <code>btn</code>) class produces this style of button:</p>
+        <h3>Default</h3>
+        <p>
+          <a href="#" class="btn btn-primary btn-invert">Link</a>
+          <span class="btn btn-primary btn-invert">Span</span>
+          <button type="button" class="btn btn-primary btn-invert">Button</button>
+          <input type="button" class="btn btn-primary btn-invert" value="Input">
+          <label class="btn btn-primary btn-invert">Label</label>
+          <a href="#" class="btn btn-primary btn-invert">Long text which may cause the button to wrap</a>
+          <a href="#" class="btn btn-primary btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Link</span></a>
+          <span class="btn btn-primary btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Span</span></span>
+          <button type="button" class="btn btn-primary btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Button</span></button>
+          <a href="#" class="btn btn-primary btn-invert btn-wide">Wide</a>
+        </p>
+        <h3>Small</h3>
+        <p>
+          <a href="#" class="btn btn-primary btn-small btn-invert">Link</a>
+          <span class="btn btn-primary btn-small btn-invert">Span</span>
+          <button type="button" class="btn btn-primary btn-small btn-invert">Button</button>
+          <input type="button" class="btn btn-primary btn-small btn-invert" value="Input">
+          <label class="btn btn-primary btn-small btn-invert">Label</label>
+          <a href="#" class="btn btn-primary btn-small btn-invert">Long text which may cause the button to wrap</a>
+          <a href="#" class="btn btn-primary btn-small btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Link</span></a>
+          <span class="btn btn-primary btn-small btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Span</span></span>
+          <button type="button" class="btn btn-primary btn-small btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Button</span></button>
+          <a href="#" class="btn btn-primary btn-invert btn-small btn-wide">Wide</a>
+        </p>
+      </div>
+    </section>
+
+    <section aria-label="Secondary" class="container gutter-xlarge">
+      <h2>Secondary</h2>
+      <p>Using the <code>btn-secondary</code> (along with <code>btn</code>) class produces this style of button:</p>
+      <h3>Default</h3>
+      <p>
+        <a href="#" class="btn btn-secondary">Link</a>
+        <span class="btn btn-secondary">Span</span>
+        <button type="button" class="btn btn-secondary">Button</button>
+        <input type="button" class="btn btn-secondary" value="Input">
+        <label class="btn btn-secondary">Label</label>
+        <a href="#" class="btn btn-secondary">Long text which may cause the button to wrap</a>
+        <a href="#" class="btn btn-secondary btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Link</span></a>
+        <span class="btn btn-secondary btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Span</span></span>
+        <button type="button" class="btn btn-secondary btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Button</span></button>
+        <a href="#" class="btn btn-secondary btn-wide">Wide</a>
+      </p>
+      <h3>Small</h3>
+      <p>
+        <a href="#" class="btn btn-secondary btn-small">Link</a>
+        <span class="btn btn-secondary btn-small">Span</span>
+        <button type="button" class="btn btn-secondary btn-small">Button</button>
+        <input type="button" class="btn btn-secondary btn-small" value="Input">
+        <label class="btn btn-secondary btn-small">Label</label>
+        <a href="#" class="btn btn-secondary btn-small">Long text which may cause the button to wrap</a>
+        <a href="#" class="btn btn-secondary btn-small btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Link</span></a>
+        <span class="btn btn-secondary btn-small btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Span</span></span>
+        <button type="button" class="btn btn-secondary btn-small btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Button</span></button>
+        <a href="#" class="btn btn-secondary btn-small btn-wide">Wide</a>
+      </p>
+    </section>
+
+    <section class="bg-black pad-vert-large gutter-xlarge" aria-label="Secondary, inverted">
+      <div class="container">
+        <h2>Secondary, inverted</h2>
+        <p>Using the <code>btn-secondary</code> and <code>btn-invert</code> (along with <code>btn</code>) class produces this style of button:</p>
+        <h3>Default</h3>
+        <p>
+          <a href="#" class="btn btn-secondary btn-invert">Link</a>
+          <span class="btn btn-secondary btn-invert">Span</span>
+          <button type="button" class="btn btn-secondary btn-invert">Button</button>
+          <input type="button" class="btn btn-secondary btn-invert" value="Input">
+          <label class="btn btn-secondary btn-invert">Label</label>
+          <a href="#" class="btn btn-secondary btn-invert">Long text which may cause the button to wrap</a>
+          <a href="#" class="btn btn-secondary btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Link</span></a>
+          <span class="btn btn-secondary btn-compact btn-invert" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Span</span></span>
+          <button type="button" class="btn btn-secondary btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Button</span></button>
+          <a href="#" class="btn btn-secondary btn-invert btn-wide">Wide</a>
+        </p>
+        <h3>Small</h3>
+        <p>
+          <a href="#" class="btn btn-secondary btn-small btn-invert">Link</a>
+          <span class="btn btn-secondary btn-small btn-invert">Span</span>
+          <button type="button" class="btn btn-secondary btn-small btn-invert">Button</button>
+          <input type="button" class="btn btn-secondary btn-small btn-invert" value="Input">
+          <label class="btn btn-secondary btn-small btn-invert">Label</label>
+          <a href="#" class="btn btn-secondary btn-small btn-invert">Long text which may cause the button to wrap</a>
+          <a href="#" class="btn btn-secondary btn-small btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Link</span></a>
+          <span class="btn btn-secondary btn-small btn-compact btn-invert" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Span</span></span>
+          <button type="button" class="btn btn-secondary btn-small btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Button</span></button>
+          <a href="#" class="btn btn-secondary btn-invert btn-small btn-wide">Wide</a>
+        </p>
+      </div>
+    </section>
+
+    <section aria-label="Tertiary" class="container gutter-xlarge">
+      <h2>Tertiary</h2>
+      <p>Using the <code>btn-tertiary</code> (along with <code>btn</code>) class produces this style of button:</p>
+      <h3>Default</h3>
+      <p>
+        <a href="#" class="btn btn-tertiary">Link</a>
+        <span class="btn btn-tertiary">Span</span>
+        <button type="button" class="btn btn-tertiary">Button</button>
+        <input type="button" class="btn btn-tertiary" value="Input">
+        <label class="btn btn-tertiary">Label</label>
+        <a href="#" class="btn btn-tertiary">Long text which may cause the button to wrap</a>
+        <a href="#" class="btn btn-tertiary btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Link</span></a>
+        <span class="btn btn-tertiary btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Span</span></span>
+        <button type="button" class="btn btn-tertiary btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Button</span></button>
+        <a href="#" class="btn btn-tertiary btn-wide">Wide</a>
+      </p>
+      <h3>Small</h3>
+      <p>
+        <a href="#" class="btn btn-tertiary btn-small">Link</a>
+        <span class="btn btn-tertiary btn-small">Span</span>
+        <button type="button" class="btn btn-tertiary btn-small">Button</button>
+        <input type="button" class="btn btn-tertiary btn-small" value="Input">
+        <label class="btn btn-tertiary btn-small">Label</label>
+        <a href="#" class="btn btn-tertiary btn-small">Long text which may cause the button to wrap</a>
+        <a href="#" class="btn btn-tertiary btn-small btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Link</span></a>
+        <span class="btn btn-tertiary btn-small btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Span</span></span>
+        <button type="button" class="btn btn-tertiary btn-small btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Button</span></button>
+        <a href="#" class="btn btn-tertiary btn-small btn-wide">Wide</a>
+      </p>
+    </section>
+
+    <section class="bg-black pad-vert-large gutter-xlarge" aria-label="Tertiary, inverted">
+      <div class="container">
+        <h2>Tertiary, inverted</h2>
+        <p>Using the <code>btn-tertiary</code> and <code>btn-invert</code> (along with <code>btn</code>) class produces this style of button:</p>
+        <h3>Default</h3>
+        <p>
+          <a href="#" class="btn btn-tertiary btn-invert">Link</a>
+          <span class="btn btn-tertiary btn-invert">Span</span>
+          <button type="button" class="btn btn-tertiary btn-invert">Button</button>
+          <input type="button" class="btn btn-tertiary btn-invert" value="Input">
+          <label class="btn btn-tertiary btn-invert">Label</label>
+          <a href="#" class="btn btn-tertiary btn-invert">Long text which may cause the button to wrap</a>
+          <a href="#" class="btn btn-tertiary btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Link</span></a>
+          <span class="btn btn-tertiary btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Span</span></span>
+          <button type="button" class="btn btn-tertiary btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Button</span></button>
+          <a href="#" class="btn btn-tertiary btn-invert btn-wide">Wide</a>
+        </p>
+        <h3>Small</h3>
+        <p>
+          <a href="#" class="btn btn-tertiary btn-small btn-invert">Link</a>
+          <span class="btn btn-tertiary btn-small btn-invert">Span</span>
+          <button type="button" class="btn btn-tertiary btn-small btn-invert">Button</button>
+          <input type="button" class="btn btn-tertiary btn-small btn-invert" value="Input">
+          <label class="btn btn-tertiary btn-small btn-invert">Label</label>
+          <a href="#" class="btn btn-tertiary btn-small btn-invert">Long text which may cause the button to wrap</a>
+          <a href="#" class="btn btn-tertiary btn-small btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Link</span></a>
+          <span class="btn btn-tertiary btn-small btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Span</span></span>
+          <button type="button" class="btn btn-tertiary btn-small btn-invert btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Button</span></button>
+          <a href="#" class="btn btn-tertiary btn-invert btn-small btn-wide">Wide</a>
+        </p>
+      </div>
+    </section>
+
+    <section aria-label="Tertiary, no arrow" class="container gutter-xlarge">
+      <h2>Tertiary, no arrow</h2>
+      <p>Using the <code>btn-no-arrow</code> (along with <code>btn</code> and <code>btn-tertiary</code>) class produces this style of button:</p>
+      <h3>Default</h3>
+      <p>
+        <a href="#" class="btn btn-tertiary btn-no-arrow">Link</a>
+        <span class="btn btn-tertiary btn-no-arrow">Span</span>
+        <button type="button" class="btn btn-tertiary btn-no-arrow">Button</button>
+        <input type="button" class="btn btn-tertiary btn-no-arrow" value="Input">
+        <label class="btn btn-tertiary btn-no-arrow">Label</label>
+        <a href="#" class="btn btn-tertiary btn-no-arrow">Long text which may cause the button to wrap</a>
+        <a href="#" class="btn btn-tertiary btn-no-arrow btn-wide">Wide</a>
+      </p>
+      <h3>Small</h3>
+      <p>
+        <a href="#" class="btn btn-tertiary btn-small btn-no-arrow">Link</a>
+        <span class="btn btn-tertiary btn-small btn-no-arrow">Span</span>
+        <button type="button" class="btn btn-tertiary btn-small btn-no-arrow">Button</button>
+        <input type="button" class="btn btn-tertiary btn-small btn-no-arrow" value="Input">
+        <label class="btn btn-tertiary btn-small btn-no-arrow">Label</label>
+        <a href="#" class="btn btn-tertiary btn-small btn-no-arrow">Long text which may cause the button to wrap</a>
+        <a href="#" class="btn btn-tertiary btn-no-arrow btn-small btn-wide">Wide</a>
+      </p>
+    </section>
+
+    <section aria-label="Icon buttons" class="container gutter-xlarge">
+      <h2>Icon buttons</h2>
+      <p>This style needs to support inline <abbr title="Scalable Vector Graphics">SVG</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> shapes, <abbr title="HyperText Markup Language">HTML</abbr> entities and inline images. They are designed to complement <a href="/sprintwell-dev/guide/form/">form fields</a>. Using the <code>btn-icon</code> (along with <code>btn</code>) class produces the below style of button.</p>
+      <h3>Square buttons</h3>
+      <p>
+        <!-- Inline SVG -->
+        <a href="#" class="btn btn-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow left" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M 4,12 H 20" />
+            <path d="m 8,8 -4,4 4,4" />
+          </svg>
+          <span class="sr-only">Link</span>
+        </a>
+        <a href="#" class="btn btn-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow right" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M 4,12 H 20" />
+            <path d="M 16,16 20,12 16,8" />
+          </svg>
+          <span class="sr-only">Link</span>
+        </a>
+        <span class="btn btn-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow left" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M 4,12 H 20" />
+            <path d="m 8,8 -4,4 4,4" />
+          </svg>
+          <span class="sr-only">Span</span>
+        </span>
+        <span class="btn btn-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow right" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M 4,12 H 20" />
+            <path d="M 16,16 20,12 16,8" />
+          </svg>
+          <span class="sr-only">Span</span>
+        </span>
+        <button type="button" class="btn btn-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow left" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M 4,12 H 20" />
+            <path d="m 8,8 -4,4 4,4" />
+          </svg>
+          <span class="sr-only">Link</span>
+        </button>
+        <button type="button" class="btn btn-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow right" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M 4,12 H 20" />
+            <path d="M 16,16 20,12 16,8" />
+          </svg>
+          <span class="sr-only">Link</span>
+        </button>
+        <!-- CSS shapes -->
+        <button type="button" class="btn btn-icon">
+          <span class="shape sh-ellipsis"></span>
+          <span class="sr-only">Link</span>
+        </button>
+        <a href="#" class="btn btn-icon">
+          <span class="shape sh-ellipsis"></span>
+          <span class="sr-only">Link</span>
+        </a>
+        <span class="btn btn-icon">
+          <span class="shape sh-ellipsis"></span>
+          <span class="sr-only">Span</span>
+        </span>
+        <!-- Inline images -->
+        <button type="button" class="btn btn-icon">
+          <img src="/sprintwell-dev/img/content/icon-raspberry.png" alt="Raspberry">
+          <span class="sr-only">Link</span>
+        </button>
+        <a href="#" class="btn btn-icon">
+          <img src="/sprintwell-dev/img/content/icon-raspberry.png" alt="Raspberry">
+          <span class="sr-only">Link</span>
+        </a>
+        <span class="btn btn-icon">
+          <img src="/sprintwell-dev/img/content/icon-raspberry.png" alt="Raspberry">
+          <span class="sr-only">Span</span>
+        </span>
+        <!-- HTML entities -->
+        <button type="button" class="btn btn-icon"><span class="text">&times;</span><span class="sr-only">Link</span></button>
+        <a href="#" class="btn btn-icon"><span class="text">&times;</span><span class="sr-only">Link</span></a>
+        <span class="btn btn-icon"><span class="text">&times;</span><span class="sr-only">Span</span></span>
+        <label class="btn btn-icon"><span class="text">&times;</span><span class="sr-only">Label</span></label>
+      </p>
+      <h3>Round buttons</h3>
+      <p>
+        <!-- Inline SVG -->
+        <a href="#" class="btn btn-icon round">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow left" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M 4,12 H 20" />
+            <path d="m 8,8 -4,4 4,4" />
+          </svg>
+          <span class="sr-only">Link</span>
+        </a>
+        <a href="#" class="btn btn-icon round">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow right" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M 4,12 H 20" />
+            <path d="M 16,16 20,12 16,8" />
+          </svg>
+          <span class="sr-only">Link</span>
+        </a>
+        <span class="btn btn-icon round">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow left" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M 4,12 H 20" />
+            <path d="m 8,8 -4,4 4,4" />
+          </svg>
+          <span class="sr-only">Span</span>
+        </span>
+        <span class="btn btn-icon round">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow right" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M 4,12 H 20" />
+            <path d="M 16,16 20,12 16,8" />
+          </svg>
+          <span class="sr-only">Span</span>
+        </span>
+        <button type="button" class="btn btn-icon round">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow left" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M 4,12 H 20" />
+            <path d="m 8,8 -4,4 4,4" />
+          </svg>
+          <span class="sr-only">Link</span>
+        </button>
+        <button type="button" class="btn btn-icon round">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow right" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M 4,12 H 20" />
+            <path d="M 16,16 20,12 16,8" />
+          </svg>
+          <span class="sr-only">Link</span>
+        </button>
+        <!-- CSS shapes -->
+        <button type="button" class="btn btn-icon round">
+          <span class="shape sh-ellipsis"></span>
+          <span class="sr-only">Link</span>
+        </button>
+        <a href="#" class="btn btn-icon round">
+          <span class="shape sh-ellipsis"></span>
+          <span class="sr-only">Link</span>
+        </a>
+        <span class="btn btn-icon round">
+          <span class="shape sh-ellipsis"></span>
+          <span class="sr-only">Span</span>
+        </span>
+        <!-- Inline images -->
+        <button type="button" class="btn btn-icon round">
+          <img src="/sprintwell-dev/img/content/icon-raspberry.png" alt="Raspberry">
+          <span class="sr-only">Link</span>
+        </button>
+        <a href="#" class="btn btn-icon round">
+          <img src="/sprintwell-dev/img/content/icon-raspberry.png" alt="Raspberry">
+          <span class="sr-only">Link</span>
+        </a>
+        <span class="btn btn-icon round">
+          <img src="/sprintwell-dev/img/content/icon-raspberry.png" alt="Raspberry">
+          <span class="sr-only">Span</span>
+        </span>
+        <!-- HTML entities -->
+        <button type="button" class="btn btn-icon round"><span class="text">&times;</span><span class="sr-only">Link</span></button>
+        <a href="#" class="btn btn-icon round"><span class="text">&times;</span><span class="sr-only">Link</span></a>
+        <span class="btn btn-icon round"><span class="text">&times;</span><span class="sr-only">Span</span></span>
+        <label class="btn btn-icon round"><span class="text">&times;</span><span class="sr-only">Label</span></label>
+      </p>
+    </section>
+
+    <section class="bg-black pad-vert-large gutter-xlarge" aria-label="Icon buttons, inverted">
+      <div class="container">
+        <h2>Icon buttons</h2>
+        <p>Using the <code>btn-icon</code> and <code>btn-invert</code> (along with <code>btn</code>) class produces the below style of button.</p>
+        <h3>Square buttons</h3>
+        <p>
+          <!-- Inline SVG -->
+          <a href="#" class="btn btn-icon btn-invert">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow left" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M 4,12 H 20" />
+              <path d="m 8,8 -4,4 4,4" />
+            </svg>
+            <span class="sr-only">Link</span>
+          </a>
+          <a href="#" class="btn btn-icon btn-invert">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow right" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M 4,12 H 20" />
+              <path d="M 16,16 20,12 16,8" />
+            </svg>
+            <span class="sr-only">Link</span>
+          </a>
+          <span class="btn btn-icon btn-invert">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow left" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M 4,12 H 20" />
+              <path d="m 8,8 -4,4 4,4" />
+            </svg>
+            <span class="sr-only">Span</span>
+          </span>
+          <span class="btn btn-icon btn-invert">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow right" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M 4,12 H 20" />
+              <path d="M 16,16 20,12 16,8" />
+            </svg>
+            <span class="sr-only">Span</span>
+          </span>
+          <button type="button" class="btn btn-icon btn-invert">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow left" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M 4,12 H 20" />
+              <path d="m 8,8 -4,4 4,4" />
+            </svg>
+            <span class="sr-only">Link</span>
+          </button>
+          <button type="button" class="btn btn-icon btn-invert">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow right" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M 4,12 H 20" />
+              <path d="M 16,16 20,12 16,8" />
+            </svg>
+            <span class="sr-only">Link</span>
+          </button>
+          <!-- CSS shapes -->
+          <button type="button" class="btn btn-icon btn-invert">
+            <span class="shape sh-ellipsis"></span>
+            <span class="sr-only">Link</span>
+          </button>
+          <a href="#" class="btn btn-icon btn-invert">
+            <span class="shape sh-ellipsis"></span>
+            <span class="sr-only">Link</span>
+          </a>
+          <span class="btn btn-icon btn-invert">
+            <span class="shape sh-ellipsis"></span>
+            <span class="sr-only">Span</span>
+          </span>
+          <!-- Inline images -->
+          <button type="button" class="btn btn-icon btn-invert">
+            <img src="/sprintwell-dev/img/content/icon-raspberry.png" alt="Raspberry">
+            <span class="sr-only">Link</span>
+          </button>
+          <a href="#" class="btn btn-icon btn-invert">
+            <img src="/sprintwell-dev/img/content/icon-raspberry.png" alt="Raspberry">
+            <span class="sr-only">Link</span>
+          </a>
+          <span class="btn btn-icon btn-invert">
+            <img src="/sprintwell-dev/img/content/icon-raspberry.png" alt="Raspberry">
+            <span class="sr-only">Span</span>
+          </span>
+          <!-- HTML entities -->
+          <button type="button" class="btn btn-icon btn-invert"><span class="text">&times;</span><span class="sr-only">Link</span></button>
+          <a href="#" class="btn btn-icon btn-invert"><span class="text">&times;</span><span class="sr-only">Link</span></a>
+          <span class="btn btn-icon btn-invert"><span class="text">&times;</span><span class="sr-only">Span</span></span>
+          <label class="btn btn-icon btn-invert"><span class="text">&times;</span><span class="sr-only">Label</span></label>
+        </p>
+        <h3>Round buttons</h3>
+        <p>
+          <!-- Inline SVG -->
+          <a href="#" class="btn btn-icon btn-invert round">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow left" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M 4,12 H 20" />
+              <path d="m 8,8 -4,4 4,4" />
+            </svg>
+            <span class="sr-only">Link</span>
+          </a>
+          <a href="#" class="btn btn-icon btn-invert round">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow right" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M 4,12 H 20" />
+              <path d="M 16,16 20,12 16,8" />
+            </svg>
+            <span class="sr-only">Link</span>
+          </a>
+          <span class="btn btn-icon btn-invert round">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow left" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M 4,12 H 20" />
+              <path d="m 8,8 -4,4 4,4" />
+            </svg>
+            <span class="sr-only">Span</span>
+          </span>
+          <span class="btn btn-icon btn-invert round">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow right" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M 4,12 H 20" />
+              <path d="M 16,16 20,12 16,8" />
+            </svg>
+            <span class="sr-only">Span</span>
+          </span>
+          <button type="button" class="btn btn-icon btn-invert round">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow left" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M 4,12 H 20" />
+              <path d="m 8,8 -4,4 4,4" />
+            </svg>
+            <span class="sr-only">Link</span>
+          </button>
+          <button type="button" class="btn btn-icon btn-invert round">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow right" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M 4,12 H 20" />
+              <path d="M 16,16 20,12 16,8" />
+            </svg>
+            <span class="sr-only">Link</span>
+          </button>
+          <!-- CSS shapes -->
+          <button type="button" class="btn btn-icon btn-invert round">
+            <span class="shape sh-ellipsis"></span>
+            <span class="sr-only">Link</span>
+          </button>
+          <a href="#" class="btn btn-icon btn-invert round">
+            <span class="shape sh-ellipsis"></span>
+            <span class="sr-only">Link</span>
+          </a>
+          <span class="btn btn-icon btn-invert round">
+            <span class="shape sh-ellipsis"></span>
+            <span class="sr-only">Span</span>
+          </span>
+          <!-- Inline images -->
+          <button type="button" class="btn btn-icon btn-invert round">
+            <img src="/sprintwell-dev/img/content/icon-raspberry.png" alt="Raspberry">
+            <span class="sr-only">Link</span>
+          </button>
+          <a href="#" class="btn btn-icon btn-invert round">
+            <img src="/sprintwell-dev/img/content/icon-raspberry.png" alt="Raspberry">
+            <span class="sr-only">Link</span>
+          </a>
+          <span class="btn btn-icon btn-invert round">
+            <img src="/sprintwell-dev/img/content/icon-raspberry.png" alt="Raspberry">
+            <span class="sr-only">Span</span>
+          </span>
+          <!-- HTML entities -->
+          <button type="button" class="btn btn-icon btn-invert round"><span class="text">&times;</span><span class="sr-only">Link</span></button>
+          <a href="#" class="btn btn-icon btn-invert round"><span class="text">&times;</span><span class="sr-only">Link</span></a>
+          <span class="btn btn-icon btn-invert round"><span class="text">&times;</span><span class="sr-only">Span</span></span>
+          <label class="btn btn-icon btn-invert round"><span class="text">&times;</span><span class="sr-only">Label</span></label>
+        </p>
+      </div>
+    </section>
+
+    <section aria-label="Tags" class="container gutter-xlarge">
+      <h2>Tags</h2>
+      <p>Using the <code>btn-tag</code> (along with <code>btn</code>) class produces this style of button:</p>
+      <p>
+        <a href="#" class="btn btn-tag">Link</a>
+        <span class="btn btn-tag">Span</span>
+        <button type="button" class="btn btn-tag">Button</button>
+        <input type="button" class="btn btn-tag" value="Input">
+        <label class="btn btn-tag">Label</label>
+        <a href="#" class="btn btn-tag">Long text which may cause the button to wrap</a>
+      </p>
+    </section>
+
+    <section class="bt-yellow pad-vert-large gutter-xlarge" aria-label="Navigation">
+      <div class="container">
+        <h2>Navigation</h2>
+        <p>Using the <code>btn-nav</code> (along with <code>btn</code>) class produces this style of button:</p>
+        <p>
+          <a href="#" class="btn btn-nav">Link</a>
+          <span class="btn btn-nav">Span</span>
+          <button type="button" class="btn btn-nav">Button</button>
+          <input type="button" class="btn btn-nav" value="Input">
+          <label class="btn btn-nav">Label</label>
+          <a href="#" class="btn btn-nav">Long text which may cause the button to wrap</a>
+          <a href="#" class="btn btn-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24" stroke="currentColor" stroke-width="1.2" aria-label="Cart">
+              <path d="m 1,2 h 4 l 5,15 h 9 L 23,7 H 7" fill="none" />
+              <circle r="1.5" cy="21" cx="11" />
+              <circle r="1.5" cy="21" cx="18" />
+            </svg>
+            <span class="sr-only">Cart</span>
+          </a>
+          <a href="#" class="btn btn-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24" stroke="currentColor" stroke-width="1.2" fill="none" aria-label="User">
+              <path d="m 1,19 v 4 h 22 v -4 l -8,-3 v -2 c 2,-2 3,-3 3,-6 0,-9 -12,-9 -12,0 0,3 1,4 3,6 v 2 z" />
+            </svg>
+            <span class="sr-only">Your account</span>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-black pad-vert-large gutter-xlarge" aria-label="Supplementary Navigation">
+      <div class="container">
+        <h2>Supplementary Navigation</h2>
+        <p>First used for links which appear in the footer of the site. Using the <code>btn-supnav</code> (along with <code>btn</code>) class produces this style of button:</p>
+        <div class="row">
+          <p class="col-6 col-md-4">
+            <a href="#" class="btn btn-supnav">Link</a>
+            <span class="btn btn-supnav">Span</span>
+          </p>
+          <p class="col-6 col-md-4">
+            <button type="button" class="btn btn-supnav">Button</button>
+            <input type="button" class="btn btn-supnav" value="Input">
+          </p>
+          <p class="col-6 col-md-4">
+            <label class="btn btn-supnav">Label</label>
+            <a href="#" class="btn btn-supnav">Long text which may cause the button to wrap</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Jumbo" class="container">
+      <h2>Jumbo</h2>
+      <p>Jumbo buttons are design to compliment the larger style of form fields which use the <code>jumbo</code> class. They can be created by combining the <code>btn-jumbo</code> class to <code>btn</code>, <code>btn-primary</code> and <code>btn-compact</code> classes.</p>
+      <p>
+        <a href="#" class="btn btn-primary btn-jumbo">Link</a>
+        <span class="btn btn-primary btn-jumbo">Span</span>
+        <button type="button" class="btn btn-primary btn-jumbo">Button</button>
+        <input type="button" class="btn btn-primary btn-jumbo" value="Input">
+        <label class="btn btn-primary btn-jumbo">Label</label>
+        <a href="#" class="btn btn-primary btn-jumbo">Long text which may cause the button to wrap</a>
+        <a href="#" class="btn btn-primary btn-jumbo btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Link</span></a>
+        <span class="btn btn-primary btn-jumbo btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Span</span></span>
+        <button type="button" class="btn btn-primary btn-jumbo btn-compact" title="btn-compact buttons, with hidden screen-reader only text"><span class="sr-only">Button</span></button>
+        <a href="#" class="btn btn-primary btn-jumbo btn-wide">Wide</a>
+      </p>
+    </section>
+
+  </main>
+<script type="text/javascript" src="../../js/app.js"></script></body>
+
+</html>

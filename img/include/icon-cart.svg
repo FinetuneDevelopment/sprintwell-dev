@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24" stroke="currentColor" aria-label="Cart">
+ <path d="m 1,2 h 4 l 5,15 h 9 L 23,7 H 7" fill="none"/>
+ <circle r="1.5" cy="21" cx="11"/>
+ <circle r="1.5" cy="21" cx="18"/>
+</svg>

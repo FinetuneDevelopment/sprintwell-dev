@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-label="Arrow pointing right" fill="none" stroke="currentColor" height="24" width="72" viewBox="0 0 72 24">
+  <path d="M 20,12 2,19 V 5 Z" fill="currentColor" stroke="none"/>
+  <path d="M 70,12 52,19 V 5 Z m -28,-4 4,4 -4,4 M 26,12 h 20"/>
+</svg>
