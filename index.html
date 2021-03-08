@@ -206,7 +206,7 @@
     <div class="container scoot">
       <div class="row no-gutters gutter-base">
         <p class="col-md flush">
-          <lite-youtube videoid="D7SRlOw6ukk" playlabel="Breastfeeding &amp; Low Carb / Keto Diet - Intermittent Fasting to Lose Baby Weight | Ashley Salvatori" class="cap-sm-north-small cap-md-west-small"></lite-youtube>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/D7SRlOw6ukk" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="cap-sm-north-small cap-md-west-small"></iframe>
         </p>
         <div class="col-md bt-white cap-sm-south-small cap-md-east-small">
           <blockquote class="pad-all-small flush">
@@ -220,7 +220,7 @@
     <div class="container gutter-base">
       <div class="row no-gutters gutter-large">
         <p class="col-md flush order-md-last">
-          <lite-youtube videoid="mhEPv4jt7Ks" playlabel="Food in Ancient Rome (Cuisine of Ancient Rome) - Garum, Puls, Bread, Moretum" class="cap-sm-north-small cap-md-east-small"></lite-youtube>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mhEPv4jt7Ks" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="cap-sm-north-small cap-md-east-small"></iframe>
         </p>
         <div class="col-md bt-white cap-sm-south-small cap-md-west-small">
           <blockquote class="pad-all-small flush">
@@ -671,128 +671,130 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row info-panel">
-        <input type="radio" name="ingredients" id="info-panel-trigger1" class="sr-only info-panel__trigger">
-        <input type="radio" name="ingredients" id="info-panel-trigger2" class="sr-only info-panel__trigger">
-        <input type="radio" name="ingredients" id="info-panel-trigger3" class="sr-only info-panel__trigger">
+    <div class="info-panel container" data-js="info-panel">
+      <div class="info-panel__overflow" data-js="info-panel-scroll">
+        <div class="row">
+          <input type="radio" name="ingredients" id="info-panel-trigger1" class="sr-only info-panel__trigger">
+          <input type="radio" name="ingredients" id="info-panel-trigger2" class="sr-only info-panel__trigger">
+          <input type="radio" name="ingredients" id="info-panel-trigger3" class="sr-only info-panel__trigger">
 
-        <figure class="col-md-6 gutter-tiny info-panel__labels">
-          <figcaption class="sr-only">The ingredient makeup of the keto shake</figcaption>
-          <div class="bt-blue pad-all-tiny brd-radius-small flex-vert" style="height: 30em;">
-            <div class="media">
-              <p class="size-c5 type-heading media-body flush line-height-tight">75% Fat</p>
-              <p class="flush line-height-tight"><label for="info-panel-trigger1" class="btn btn-tertiary btn-no-arrow flush info-panel__lab">More Info</label></p>
-            </div>
-            <div class="bt-avacado pad-all-tiny cap-north-small flex-vert mt-auto inside-gutter-bottom inside-gutter-right" style="height: 12em;">
+          <figure class="col gutter-tiny info-panel__labels">
+            <figcaption class="sr-only">The ingredient makeup of the keto shake</figcaption>
+            <div class="bt-blue pad-all-tiny brd-radius-small flex-vert" style="height: 30em;">
               <div class="media">
-                <p class="size-c5 type-heading media-body flush line-height-tight">20% Protein</p>
-                <p class="flush line-height-tight"><label for="info-panel-trigger2" class="btn btn-tertiary btn-no-arrow flush info-panel__lab">More Info</label></p>
+                <p class="size-c5 type-heading media-body flush line-height-tight">75% Fat</p>
+                <p class="flush line-height-tight"><label for="info-panel-trigger1" class="btn btn-tertiary btn-no-arrow flush info-panel__lab">More Info</label></p>
               </div>
-              <div class="bt-pink pad-all-tiny cap-north-small inside-gutter-bottom inside-gutter-right mt-auto">
+              <div class="bt-avacado pad-all-tiny cap-north-small flex-vert mt-auto inside-gutter-bottom inside-gutter-right" style="height: 12em;">
                 <div class="media">
-                  <p class="size-c5 type-heading media-body flush line-height-tight">5% Carbs</p>
-                  <p class="flush line-height-tight"><label for="info-panel-trigger3" class="btn btn-tertiary btn-no-arrow flush info-panel__lab">More Info</label></p>
+                  <p class="size-c5 type-heading media-body flush line-height-tight">20% Protein</p>
+                  <p class="flush line-height-tight"><label for="info-panel-trigger2" class="btn btn-tertiary btn-no-arrow flush info-panel__lab">More Info</label></p>
+                </div>
+                <div class="bt-pink pad-all-tiny cap-north-small inside-gutter-bottom inside-gutter-right mt-auto">
+                  <div class="media">
+                    <p class="size-c5 type-heading media-body flush line-height-tight">5% Carbs</p>
+                    <p class="flush line-height-tight"><label for="info-panel-trigger3" class="btn btn-tertiary btn-no-arrow flush info-panel__lab">More Info</label></p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </figure>
+          </figure>
 
-        <aside class="col-md-6 flex-vert gutter-tiny info_panel__panels">
+          <aside class="col flex-vert gutter-tiny info_panel__panels">
 
-          <section class="info-panel__pane bt-white brd-radius-small" id="info-panel-pane1" aria-label="Fat ingredients">
-            <div class="pad-all-small ic-attribute">
-              <header class="media">
-                <h2 class="cira4 flush media-body"><span class="sr-only">Fat </span>Ingredients</h2>
-                <p class="flush"><label for="info-panel-trigger1" class="btn btn-icon round info-panel__lab"><span class="text" aria-hidden="true">&times;</span><span class="sr-only"> Close ingredient panel</span></label></p>
-              </header>
-              <p class="size-c6 type-heading flush">
-                Hemp Protein
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
-                  <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
-                </svg>
-              </p>
-              <p class="type-heading size-c6 flush">
-                Avacado Oil
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
-                  <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
-                </svg>
-              </p>
-              <p class="type-heading size-c6 flush">
-                <abbr title="Medium-chain triglycerides">MCT</abbr> Oil
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
-                  <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
-                </svg>
-              </p>
-              <p class="type-heading size-c6 flush">
-                Hemp Protein
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
-                  <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
-                </svg>
-              </p>
-            </div>
-            <p class="flush mt-auto"><img src="/sprintwell-dev/img/content/img-avacados.jpg" class="cap-south-small" loading="lazy" alt="Avacados."></p>
-          </section>
+            <section class="info-panel__pane bt-white brd-radius-small" id="info-panel-pane1" aria-label="Fat ingredients">
+              <div class="pad-all-small ic-attribute">
+                <header class="media">
+                  <h2 class="cira4 flush media-body"><span class="sr-only">Fat </span>Ingredients</h2>
+                  <p class="flush"><label for="info-panel-trigger1" class="btn btn-icon round info-panel__lab"><span class="text" aria-hidden="true">&times;</span><span class="sr-only"> Close ingredient panel</span></label></p>
+                </header>
+                <p class="size-c6 type-heading flush">
+                  Hemp Protein
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
+                    <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
+                  </svg>
+                </p>
+                <p class="type-heading size-c6 flush">
+                  Avacado Oil
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
+                    <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
+                  </svg>
+                </p>
+                <p class="type-heading size-c6 flush">
+                  <abbr title="Medium-chain triglycerides">MCT</abbr> Oil
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
+                    <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
+                  </svg>
+                </p>
+                <p class="type-heading size-c6 flush">
+                  Hemp Protein
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
+                    <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
+                  </svg>
+                </p>
+              </div>
+              <p class="flush mt-auto"><img src="/sprintwell-dev/img/content/img-avacados.jpg" class="cap-south-small" loading="lazy" alt="Avacados."></p>
+            </section>
 
-          <section class="info-panel__pane bt-white brd-radius-small" id="info-panel-pane2" aria-label="Protein ingredients">
-            <div class="pad-all-small ic-attribute">
-              <header class="media">
-                <h2 class="cira4 flush media-body"><span class="sr-only">Protein </span>Ingredients</h2>
-                <p class="flush"><label for="info-panel-trigger2" class="btn btn-icon round info-panel__lab"><span class="text" aria-hidden="true">&times;</span><span class="sr-only"> Close ingredient panel</span></label></p>
-              </header>
-              <p class="type-heading size-c6 flush">
-                Pea protein
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
-                  <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
-                </svg>
-              </p>
-              <p class="type-heading size-c6 flush">
-                Sunflower seed protein
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
-                  <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
-                </svg>
-              </p>
-              <p class="type-heading size-c6 flush">
-                Pumpkin seed protein
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
-                  <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
-                </svg>
-              </p>
-            </div>
-            <p class="flush mt-auto"><img src="/sprintwell-dev/img/content/img-sunflower-seeds.jpg" class="cap-south-small" loading="lazy" alt="Sunflower seeds."></p>
-          </section>
+            <section class="info-panel__pane bt-white brd-radius-small" id="info-panel-pane2" aria-label="Protein ingredients">
+              <div class="pad-all-small ic-attribute">
+                <header class="media">
+                  <h2 class="cira4 flush media-body"><span class="sr-only">Protein </span>Ingredients</h2>
+                  <p class="flush"><label for="info-panel-trigger2" class="btn btn-icon round info-panel__lab"><span class="text" aria-hidden="true">&times;</span><span class="sr-only"> Close ingredient panel</span></label></p>
+                </header>
+                <p class="type-heading size-c6 flush">
+                  Pea protein
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
+                    <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
+                  </svg>
+                </p>
+                <p class="type-heading size-c6 flush">
+                  Sunflower seed protein
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
+                    <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
+                  </svg>
+                </p>
+                <p class="type-heading size-c6 flush">
+                  Pumpkin seed protein
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
+                    <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
+                  </svg>
+                </p>
+              </div>
+              <p class="flush mt-auto"><img src="/sprintwell-dev/img/content/img-sunflower-seeds.jpg" class="cap-south-small" loading="lazy" alt="Sunflower seeds."></p>
+            </section>
 
-          <section class="info-panel__pane bt-white brd-radius-small" id="info-panel-pane3" aria-label="Carbohydrate ingredients">
-            <div class="pad-all-small ic-attribute">
-              <header class="media">
-                <h2 class="cira4 flush media-body"><span class="sr-only">Carbohydrate </span>Ingredients</h2>
-                <p class="flush"><label for="info-panel-trigger3" class="btn btn-icon round info-panel__lab"><span class="text" aria-hidden="true">&times;</span><span class="sr-only"> Close ingredient panel</span></label></p>
-              </header>
-              <p class="type-heading size-c6 flush">
-                Spinach
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
-                  <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
-                </svg>
-              </p>
-              <p class="type-heading size-c6 flush">
-                Carrot
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
-                  <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
-                </svg>
-              </p>
-              <p class="type-heading size-c6 flush">
-                Beetroot
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
-                  <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
-                </svg>
-              </p>
-            </div>
-            <p class="flush mt-auto"><img src="/sprintwell-dev/img/content/img-carrots.jpg" class="cap-south-small" loading="lazy" alt="Carrots."></p>
-          </section>
+            <section class="info-panel__pane bt-white brd-radius-small" id="info-panel-pane3" aria-label="Carbohydrate ingredients">
+              <div class="pad-all-small ic-attribute">
+                <header class="media">
+                  <h2 class="cira4 flush media-body"><span class="sr-only">Carbohydrate </span>Ingredients</h2>
+                  <p class="flush"><label for="info-panel-trigger3" class="btn btn-icon round info-panel__lab"><span class="text" aria-hidden="true">&times;</span><span class="sr-only"> Close ingredient panel</span></label></p>
+                </header>
+                <p class="type-heading size-c6 flush">
+                  Spinach
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
+                    <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
+                  </svg>
+                </p>
+                <p class="type-heading size-c6 flush">
+                  Carrot
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
+                    <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
+                  </svg>
+                </p>
+                <p class="type-heading size-c6 flush">
+                  Beetroot
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" width="110" height="55" fill="none" stroke="currentColor" aria-label="Arrow right">
+                    <path d="m 43,8 4,4 -4,4 M 0,12 h 47"/>
+                  </svg>
+                </p>
+              </div>
+              <p class="flush mt-auto"><img src="/sprintwell-dev/img/content/img-carrots.jpg" class="cap-south-small" loading="lazy" alt="Carrots."></p>
+            </section>
 
-        </aside>
+          </aside>
 
+        </div>
       </div>
     </div>
 
