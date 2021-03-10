@@ -27,6 +27,36 @@
   <link rel="mask-icon" href="/sprintwell-dev/img/favicon/safari-pinned-tab.svg" color="#2e38ef">
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="theme-color" content="#f3dc3d">
+  <script>
+    window.gdpr = {
+      "addTag": function(tag,attr,content) {
+        var newTag = document.createElement(tag);
+        for (var prop in attr) {
+          if (!attr.hasOwnProperty(prop)) continue;
+          newTag.setAttribute(prop,attr[prop]);
+        }
+        if (content) newTag.innerHTML = content;
+        var scripts = document.getElementsByTagName("script");
+        var here = scripts[scripts.length - 1];
+        here.parentElement.insertBefore(newTag, here.nextSibling);
+      }
+    };
+    var gdprChoice = document.cookie.match(new RegExp('(^| )gdpr=([^;]+)'));
+    window.gdpr.choice = gdprChoice ? (gdprChoice[0].split('=')[1] == 'true') : null;
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+    if (window.gdpr.choice) {
+      window.gdpr.addTag('script',{
+        'src': 'https://www.googletagmanager.com/gtag/js?id=G-PN4N1TCHN2',
+        'async': true
+      });
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PN4N1TCHN2');
+    }
+  </script>
 <link href="../css/app.css" rel="stylesheet"></head>
 
 <body>
@@ -157,6 +187,64 @@
       </div>
     </section>
 
+    <section class="bt-yellow pad-vert-xlarge" aria-label="Where should we go next?">
+      <header class="container text-center">
+        <div class="row justify-content-center">
+          <h2 class="cira2 col-lg-9 ic-small">Where should we go next?</h2>
+        </div>
+        <div class="row justify-content-center">
+          <p class="col-lg-7 lead">At Sprintwell, we want to work for and with our customers. Would any of the following be useful to you?</p>
+        </div>
+      </header>
+
+      <form method="get" action="/sprintwell-dev/" class="container text-center" data-poll="futureProduct">
+        <p class="lead" data-state="thanks"><strong>Thank you for voting! We hope to see you again soon.</strong></p>
+        <p class="lead" data-state="no-ga"><strong>Sorry, but it looks like your privacy settings will not allow you to participate.</strong></p>
+        <p><button type="button" class="btn btn-primary" onclick="document.cookie='futureProduct=;expires=Fri, 01 Jan 2000 00:00:00 UTC;path=/'">Clear this cookie</button></p>
+        <div data-js="poll-container">
+          <div class="row">
+            <p class="col-xl col-md-6">
+              <input type="radio" name="futureProduct" value="sprint-medals" id="sprint-medals" class="sr-only poll-input">
+              <label for="sprint-medals" class="bt-white pad-all-small brd-radius-small flex-vert">
+                <span class="cira4">01</span>
+                <span class="h4">Sprint medals</span>
+                <span class="gutter-base">A momento of your time with Sprintwell which you can treasure forever</span>
+                <span class="mt-auto"><img src="/sprintwell-dev/img/content/img-sprint-medals.jpg" alt="A man proudly wearing a medal and a sweat band around his head."></span>
+              </label>
+            </p>
+            <p class="col-xl col-md-6">
+              <input type="radio" name="futureProduct" value="yoga-mat" id="yoga-mat" class="sr-only poll-input">
+              <label for="yoga-mat" class="bt-white pad-all-small brd-radius-small flex-vert">
+                <span class="cira4">02</span>
+                <span class="h4">Yoga mat</span>
+                <span class="gutter-base">A yoga mat with the Sprintwell logo printed on it</span>
+                <span class="mt-auto"><img src="/sprintwell-dev/img/content/img-yoga-mat.jpg" alt="A wonan sits cross-legged on a yoga mat."></span>
+              </label>
+            </p>
+            <p class="col-xl col-md-6">
+              <input type="radio" name="futureProduct" value="lunch-box" id="lunch-box" class="sr-only poll-input">
+              <label for="lunch-box" class="bt-white pad-all-small brd-radius-small flex-vert">
+                <span class="cira4">03</span>
+                <span class="h4">Portion-control lunch boxes</span>
+                <span class="gutter-base">A lunch box which helps you with protion control</span>
+                <span class="mt-auto"><img src="/sprintwell-dev/img/content/img-lunch-box.jpg" alt="A lunch box with individual compartments within it."></span>
+              </label>
+            </p>
+            <p class="col-xl col-md-6">
+              <input type="radio" name="futureProduct" value="fat-wand" id="fat-wand" class="sr-only poll-input">
+              <label for="fat-wand" class="bt-white pad-all-small brd-radius-small flex-vert">
+                <span class="cira4">04</span>
+                <span class="h4">Fat wand</span>
+                <span class="gutter-base">A magic wand which magics away fat from your body</span>
+                <span class="mt-auto"><img src="/sprintwell-dev/img/content/img-fat-wand.jpg" alt="A girl dressed as a princess holds a wooden magic wand."></span>
+              </label>
+            </p>
+          </div>
+          <p class="flush"><input type="submit" class="btn btn-primary" value="Submit"></p>
+        </div>
+      </form>
+    </section>
+
     <section class="bt-pale-blue pad-top-x-large" aria-label="With You Every Step of the Way">
       <div class="container">
         <div class="row">
@@ -281,6 +369,7 @@
             <a href="/sprintwell-dev/privacy/" class="btn btn-supnav">Privacy Policy</a>
             <a href="/sprintwell-dev/guarantee/" class="btn btn-supnav">Our Guarantee</a>
             <a href="/sprintwell-dev/track-your-order/" class="btn btn-supnav">Track your Order</a>
+            <button type="button" data-js="cookie-config" class="btn btn-supnav">Change my cookie preferences</button>
           </p>
         </section>
 
