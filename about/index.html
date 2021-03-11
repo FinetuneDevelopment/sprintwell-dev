@@ -43,16 +43,14 @@
     };
     var gdprChoice = document.cookie.match(new RegExp('(^| )gdpr=([^;]+)'));
     window.gdpr.choice = gdprChoice ? (gdprChoice[0].split('=')[1] == 'true') : null;
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
     if (window.gdpr.choice) {
       window.gdpr.addTag('script',{
         'src': 'https://www.googletagmanager.com/gtag/js?id=G-PN4N1TCHN2',
         'async': true
       });
-    }
-  </script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script>
-    if (window.gdpr.choice) {
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -201,7 +199,7 @@
 
       <form method="get" action="/sprintwell-dev/" class="container text-center" data-poll="futureProduct">
         <p class="lead" data-state="no-ga"><strong>Sorry, but it looks like your privacy settings will not allow you to participate.</strong></p>
-        <p><button type="button" class="btn btn-primary" onclick="document.cookie='futureProduct=;expires=Fri, 01 Jan 2000 00:00:00 UTC;path=/'">Clear this cookie</button></p>
+        <p><button type="button" class="btn btn-primary" onclick="document.cookie='futureProduct=;expires=Fri, 01 Jan 2000 00:00:00 UTC;path=/'">Clear Future Product cookie</button></p>
         <div data-js="poll-container">
           <div class="row">
             <p class="col-xl col-md-6">
@@ -292,6 +290,54 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="bt-pale-blue pad-vert-xlarge" aria-label="What size should we sell Keto Meal Shake in?">
+      <form action="/sprintwell-dev/" method="get" class="container" data-poll="productSize">
+
+        <header class="row justify-content-center text-center gutter-large">
+          <h2 class="col-lg-6 col-md-8 col-sm-10 cira4 gutter-base">What size should we sell Keto Meal Shake in?</h2>
+          <p class="lead" data-state="no-ga"><strong>Sorry, but it looks like your privacy settings will not allow you to participate.</strong></p>
+          <p class="col-12"><button type="button" class="btn btn-primary" onclick="document.cookie='productSize=;expires=Fri, 01 Jan 2000 00:00:00 UTC;path=/'">Clear Product Size cookie</button></p>
+        </header>
+
+        <div data-js="poll-container">
+          <div class="row">
+            <p class="col-md-4 form-molecule jumbo">
+              <input type="radio" name="productSize" id="productSize-30" value="30" class="sr-only poll-input">
+              <label for="productSize-30" class="bt-white btn flex-vert">
+                <span class="d-block brd-right">
+                  <span class="cira6 size-h6 letter-spacing-tight d-block">30g sachets</span>
+                  Perfect for your bag and on the go
+                </span>
+              </label>
+            </p>
+            <p class="col-md-4 form-molecule jumbo">
+              <input type="radio" name="productSize" id="productSize-500" value="30" class="sr-only poll-input">
+              <label for="productSize-500" class="bt-white btn flex-vert">
+                <span class="d-block brd-right">
+                  <span class="cira6 size-h6 letter-spacing-tight d-block">500g box</span>
+                  Fits next to your breakfast cereal
+                </span>
+              </label>
+            </p>
+            <p class="col-md-4 form-molecule jumbo">
+              <input type="radio" name="productSize" id="productSize-5000" value="30" class="sr-only poll-input">
+              <label for="productSize-5000" class="bt-white btn flex-vert">
+                <span class="d-block brd-right">
+                  <span class="cira6 size-h6 letter-spacing-tight d-block">5,000g tub</span>
+                  Buying in bulk for the best value
+                </span>
+              </label>
+            </p>
+          </div>
+          <footer class="text-center">
+            <p><input type="submit" value="Vote" class="btn btn-primary"></p>
+            <p class="lead" data-state="thanks"><strong>Thank you for voting! We hope to see you again soon.</strong></p>
+          </footer>
+        </div>
+
+      </form>
     </section>
 
     <form method="get" action="/sprintwell-dev/" class="bt-pale-blue pad-vert-xlarge" aria-label="Join our mailing list">
