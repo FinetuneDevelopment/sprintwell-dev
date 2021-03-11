@@ -43,14 +43,16 @@
     };
     var gdprChoice = document.cookie.match(new RegExp('(^| )gdpr=([^;]+)'));
     window.gdpr.choice = gdprChoice ? (gdprChoice[0].split('=')[1] == 'true') : null;
-  </script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script>
     if (window.gdpr.choice) {
       window.gdpr.addTag('script',{
         'src': 'https://www.googletagmanager.com/gtag/js?id=G-PN4N1TCHN2',
         'async': true
       });
+    }
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+    if (window.gdpr.choice) {
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -198,7 +200,6 @@
       </header>
 
       <form method="get" action="/sprintwell-dev/" class="container text-center" data-poll="futureProduct">
-        <p class="lead" data-state="thanks"><strong>Thank you for voting! We hope to see you again soon.</strong></p>
         <p class="lead" data-state="no-ga"><strong>Sorry, but it looks like your privacy settings will not allow you to participate.</strong></p>
         <p><button type="button" class="btn btn-primary" onclick="document.cookie='futureProduct=;expires=Fri, 01 Jan 2000 00:00:00 UTC;path=/'">Clear this cookie</button></p>
         <div data-js="poll-container">
@@ -240,6 +241,7 @@
               </label>
             </p>
           </div>
+          <p class="lead" data-state="thanks"><strong>Thank you for voting! We hope to see you again soon.</strong></p>
           <p class="flush"><input type="submit" class="btn btn-primary" value="Submit"></p>
         </div>
       </form>

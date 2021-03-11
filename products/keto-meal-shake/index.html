@@ -27,6 +27,36 @@
   <link rel="mask-icon" href="/sprintwell-dev/img/favicon/safari-pinned-tab.svg" color="#2e38ef">
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="theme-color" content="#f3dc3d">
+  <script>
+    window.gdpr = {
+      "addTag": function(tag,attr,content) {
+        var newTag = document.createElement(tag);
+        for (var prop in attr) {
+          if (!attr.hasOwnProperty(prop)) continue;
+          newTag.setAttribute(prop,attr[prop]);
+        }
+        if (content) newTag.innerHTML = content;
+        var scripts = document.getElementsByTagName("script");
+        var here = scripts[scripts.length - 1];
+        here.parentElement.insertBefore(newTag, here.nextSibling);
+      }
+    };
+    var gdprChoice = document.cookie.match(new RegExp('(^| )gdpr=([^;]+)'));
+    window.gdpr.choice = gdprChoice ? (gdprChoice[0].split('=')[1] == 'true') : null;
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+    if (window.gdpr.choice) {
+      window.gdpr.addTag('script',{
+        'src': 'https://www.googletagmanager.com/gtag/js?id=G-PN4N1TCHN2',
+        'async': true
+      });
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PN4N1TCHN2');
+    }
+  </script>
 <link href="../../css/app.css" rel="stylesheet"></head>
 
 <body>
@@ -628,6 +658,7 @@
             <a href="/sprintwell-dev/privacy/" class="btn btn-supnav">Privacy Policy</a>
             <a href="/sprintwell-dev/guarantee/" class="btn btn-supnav">Our Guarantee</a>
             <a href="/sprintwell-dev/track-your-order/" class="btn btn-supnav">Track your Order</a>
+            <button type="button" data-js="cookie-config" class="btn btn-supnav">Change my cookie preferences</button>
           </p>
         </section>
 
