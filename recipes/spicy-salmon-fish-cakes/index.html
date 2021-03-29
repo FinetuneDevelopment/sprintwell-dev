@@ -135,7 +135,7 @@
             <div class="row">
               <div class="col-md-5">
                 <h1 itemprop="name">Spicy salmon fish cakes</h1>
-                <div itemprop="abstract" class="lead">
+                <div itemprop="description" class="lead">
                   <p>Who said salmon can only be grilled? Try these super easy zesty, spicy and tangy salmon fish cakes and trust me, you won’t regret it!</p>
                 </div>
                 <p class="ic-small">
@@ -157,6 +157,7 @@
                     Serves
                     <button type="button" class="btn cira5" aria-label="Increase servings" title="Increase servings" data-increase="recipe-quantity">&#9651;</button>
                     <input type="number" min="1" data-js="serving-size" value="6" class="inp-short text-center" itemprop="recipeYield" id="recipe-quantity">
+                    <meta itemprop="recipeYield" content="6">
                     <button type="button" class="ml-2 btn cira5" aria-label="Decrease servings" title="Decrease servings" data-decrease="recipe-quantity">&#9661;</button>
                     people
                   </label>
@@ -259,22 +260,29 @@
             </section>
           </aside>
 
-          <section class="offset-lg-2 col-lg-6 col-md-8" itemprop="recipeInstructions" aria-label="Cooking instructions">
+          <section class="offset-lg-2 col-lg-6 col-md-8" aria-label="Cooking instructions">
             <h2>Cooking instructions</h2>
-            <h3>Step 1:</h3>
-            <p class="lead">In a food processor (or blender), add all ingredients except the olive oil and blend away. Once ready, empty the fish cake mix into a large bowl and form small burger-shaped patties.</p>
 
+            <section itemprop="recipeInstructions" aria-label="Step ">
+              <h3>Step 1:</h3>
+              <p class="lead">In a food processor (or blender), add <strong>all ingredients except the olive oil</strong> and blend away. Once ready, empty the fish cake mix into a large bowl and form small burger-shaped patties.</p>
+            </section>
 
-            <h3>Step 2:</h3>
-            <p class="lead">In a non-stick pan, over medium heat, heat the olive oil up and add 2-3 fish cakes at a time into the pan. Cook each side evenly for 3-4 minutes, until golden brown and crispy.</p>
+            <section itemprop="recipeInstructions" aria-label="Step 2">
+              <h3>Step 2:</h3>
+              <p class="lead">In a non-stick pan, over medium heat, heat the <strong>olive oil</strong> up and add 2-3 fish cakes at a time into the pan. Cook each side evenly for <strong>3-4 minutes</strong>, until golden brown and crispy.</p>
+            </section>
 
             <aside class="bt-pink pad-all-small punch gutter-tiny" aria-label="Note">
               <h2 class="flag pos-outside-ne bt-red">Note</h2>
               <p>When frying, remember to <strong>always</strong> lay the food <strong>away</strong> from you, minimizing any potential risk of oil splashing onto your skin.</p>
             </aside>
 
-            <h3>Step 3:</h3>
-            <p class="lead">When ready, allow the fish cakes to cool down for ~1 minute onto a plate lined with a piece of paper towel, in order to absorb any excess oil. Serve alongside steamed broccoli and asparagus, salad or your favourite dipping sauce!</p>
+            <section itemprop="recipeInstructions" aria-label="Step 3">
+              <h3>Step 3:</h3>
+              <p class="lead">When ready, allow the fish cakes to cool down for <strong>~1 minute</strong> onto a plate lined with a piece of paper towel, in order to absorb any excess oil. Serve alongside steamed broccoli and asparagus, salad or your favourite dipping sauce!</p>
+            </section>
+
           </section>
         </div>
       </div>

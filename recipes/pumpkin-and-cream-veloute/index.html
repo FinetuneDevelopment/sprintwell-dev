@@ -135,7 +135,7 @@
             <div class="row">
               <div class="col-md-5">
                 <h1 itemprop="name">Pumpkin &amp; cream velouté</h1>
-                <div itemprop="abstract" class="lead">
+                <div itemprop="description" class="lead">
                   <p>Creamy, quick and effortless to make. Ideal for a cosy winter’s night in!</p>
                 </div>
                 <p class="ic-small">
@@ -156,7 +156,8 @@
                   <label>
                     Serves
                     <button type="button" class="btn cira5" aria-label="Increase servings" title="Increase servings" data-increase="recipe-quantity">&#9651;</button>
-                    <input type="number" min="1" data-js="serving-size" value="2" class="inp-short text-center" itemprop="recipeYield" id="recipe-quantity">
+                    <input type="number" min="1" data-js="serving-size" value="2" class="inp-short text-center" id="recipe-quantity">
+                    <meta itemprop="recipeYield" content="2">
                     <button type="button" class="ml-2 btn cira5" aria-label="Decrease servings" title="Decrease servings" data-decrease="recipe-quantity">&#9661;</button>
                     people
                   </label>
@@ -259,21 +260,29 @@
 
           </aside>
 
-          <section class="offset-lg-2 col-lg-6 col-md-8" itemprop="recipeInstructions" aria-label="Cooking instructions">
+          <section class="offset-lg-2 col-lg-6 col-md-8" aria-label="Cooking instructions">
             <h2>Cooking instructions</h2>
-            <h3>Step 1:</h3>
-            <p class="lead">In a large pot, pour the chicken stock and olive oil, add the pumpkin flesh, seasonings and quickly bring to a boil over high heat. Once boiling, reduce the heat to minimum and simmer for ~20 minutes, until the pumpkin is soft.</p>
+
+            <section itemprop="recipeInstructions" aria-label="Step 1">
+              <h3>Step 1:</h3>
+              <p class="lead">In a large pot, pour the <strong>chicken stock</strong> and <strong>olive oil</strong>, add the <strong>pumpkin flesh</strong>, <strong>seasonings</strong> and quickly bring to a boil over high heat. Once boiling, reduce the heat to minimum and simmer for <strong>~20 minutes</strong>, until the pumpkin is soft.</p>
+            </section>
 
             <aside class="bt-pale-yellow pad-all-small punch gutter-tiny" aria-label="Tip">
               <h2 class="flag pos-outside-ne bt-yellow">Tip</h2>
               <p>Pierce the pumpkin through with a fork and hold it facing downwards. If the pumpkin slides and drops (i.e. doesn’t stay firmly on the fork) then it’s ready!</p>
             </aside>
 
-            <h3>Step 2:</h3>
-            <p class="lead">Turn the heat off, add the double cream, season with salt & pepper to taste and mash everything in the pot using a hand / bland blender. If you don’t have one, pouring into a regular blender (pulse function) will do just fine!</p>
+            <section itemprop="recipeInstructions" aria-label="Step 2">
+              <h3>Step 2:</h3>
+              <p class="lead">Turn the heat off, add the <strong>double cream</strong>, season with <strong>salt &amp; pepper</strong> to taste and mash everything in the pot using a hand / bland blender. If you don’t have one, pouring into a regular blender (pulse function) will do just fine!</p>
+            </section>
 
-            <h3>Step 3:</h3>
-            <p class="lead">Serve in a deep bowl, garnish with sour cream and sprinkle fresh herbs of your choice!</p>
+            <section itemprop="recipeInstructions" aria-label="Step 3">
+              <h3>Step 3:</h3>
+              <p class="lead">Serve in a deep bowl, garnish with <strong>sour cream</strong> and sprinkle <strong>fresh herbs</strong> of your choice!</p>
+            </section>
+
           </section>
         </div>
       </div>
