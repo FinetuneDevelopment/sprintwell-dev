@@ -139,12 +139,12 @@
                   <p>Well, if you can’t visit Greece, then why not have Greece visit you?! Ah, the reminiscence of the good old days at Yiayia’s house...!</p>
                 </div>
                 <p class="ic-small">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-label="Preporation time">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-label="preparation time">
                     <path d="m 18,3 v 3 h 2 M 5,13 c 7,6 12,8 17,8 L 9,8 Z M 8,7 2,2 C 1,1 0,5 2,7 l 3.5,3 z"/>
                     <circle r="4" cy="5.7" cx="18.1"/>
                   </svg>
                   <meta itemprop="prepTime" content="PT30M">
-                  30 minutes
+                  <span data-js="preptime">30</span> <span data-js="prepunits">minutes</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" aria-label="Cooking time">
                     <circle r="4" cy="6" cx="18"/>
                     <path d="m 8,8 v 1 c 0,1 1,2 2,2 h 2 c 1,0 2,-1 2,-2 V 8 M 4,6 c 0,-1 5,-2 7,-2 2,0 3.3,0.3 3.3,0.3 M 14,6 H 2 c 1,0 2,1 2,2 v 12 c 0,1 1,2 2,2 h 10 c 1,0 2,-1 2,-2 V 10 m 0,-7 v 3 h 2"/>
@@ -156,13 +156,13 @@
                   <label>
                     Serves
                     <button type="button" class="btn cira5" aria-label="Increase servings" title="Increase servings" data-increase="recipe-quantity">&#9651;</button>
-                    <input type="number" min="1" data-js="serving-size" value="2" class="inp-short text-center" itemprop="recipeYield" id="recipe-quantity">
+                    <input type="number" min="1" data-js="serving-size" autocomplete="off" value="2" class="inp-short text-center" id="recipe-quantity">
                     <meta itemprop="recipeYield" content="2">
                     <button type="button" class="ml-2 btn cira5" aria-label="Decrease servings" title="Decrease servings" data-decrease="recipe-quantity">&#9661;</button>
                     people
                   </label>
                 </p>
-                <p class="flush">
+                <p>
                   Display recipe in
                   <span class="form-molecule d-inline-block ml-3">
                     <input type="radio" name="measurement-type" data-measurement="metric" id="measurement-type-metric" class="sr-only" checked>
@@ -173,11 +173,14 @@
                     <label for="measurement-type-imperial">Imperial</label>
                   </span>
                   <span class="form-molecule d-inline-block ml-3">
-                    <input type="radio" name="measurement-type" data-measurement="cups" id="measurement-type-cups" class="sr-only">
+                    <input type="radio" name="measurement-type" data-measurement="cups" id="measurement-type-cups" data-show="measurement-type-cups-note" class="sr-only">
                     <label for="measurement-type-cups"><abbr title="United States">US</abbr> Cups</label>
                   </span>
                 </p>
-                <p class="small">Note that as cups are based on volume, not weight, this conversion is based on flour.</p>
+                <aside class="bt-pink pad-all-tiny punch gutter-tiny" id="measurement-type-cups-note" hidden>
+                  <h2 class="flag pos-outside-nw bt-red">Note</h2>
+                  <p class="small">As cups are based on volume, not weight, this conversion is based on flour.</p>
+                </aside>
                 <p class="form-molecule">
                   <input type="checkbox" data-js="spoons-preference" id="spoons-preference" class="sr-only" checked>
                   <label for="spoons-preference">Do not convert <abbr title="Teaspoon">tsp</abbr> and <abbr title="Tablespoon">tbsp</abbr></label>
